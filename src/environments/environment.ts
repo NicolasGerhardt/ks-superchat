@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: 'AIzaSyBEW6QYPQnyeqLq9E74ddyBAPBgLbZMkCw',
-    authDomain: 'ks-superchat.firebaseapp.com',
-    projectId: 'ks-superchat',
-    storageBucket: 'ks-superchat.appspot.com',
-    messagingSenderId: '935295729914',
-    appId: '1:935295729914:web:6391e360b9c0f6b88d4943',
+    apiKey: "AIzaSyBEW6QYPQnyeqLq9E74ddyBAPBgLbZMkCw",
+    authDomain: "ks-superchat.firebaseapp.com",
+    projectId: "ks-superchat",
+    storageBucket: "ks-superchat.appspot.com",
+    messagingSenderId: "935295729914",
+    appId: "1:935295729914:web:e6d808b0e636ec5d8d4943"
   },
 };
 

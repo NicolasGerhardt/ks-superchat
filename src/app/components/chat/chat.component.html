@@ -1,1 +1,19 @@
-<p>chat works!</p>
+<ng-container *ngIf="chat$ | async as chat">
+  <div class="chat">
+    <div *ngFor="let msg of chat.messages; trackBy: trackByCreated">
+      <div class="user">
+        <img src="msg.user?.photoURL">
+        {{ msg.user.displayName || msg.user.uid }}
+      </div>
+      <p>
+        {{ msg.content }}
+      </p>
+    </div>
+  </div>
+
+  <div class="form">
+    <input [(ngModel)]="newMsg" (keydown.enter)="submit(chat.id)">
+    <input type="button" (click)="submit(chat.id)">
+  </div>
+
+</ng-container>
